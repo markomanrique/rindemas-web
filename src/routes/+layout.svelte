@@ -81,8 +81,11 @@
 		}
 	}
 
+	// Popup automático al entrar. En pausa por ahora; poner en true para reactivarlo.
+	const POPUP_AL_ENTRAR = false;
+
 	onMount(() => {
-		openDialog();
+		if (POPUP_AL_ENTRAR) openDialog();
 	});
 </script>
 
